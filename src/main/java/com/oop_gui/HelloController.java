@@ -14,6 +14,7 @@ public class HelloController {
     @FXML
     AnchorPane chatPane;
     AnchorPane chatbox1;
+    AnchorPane chatbox2;
     public void setMainPane(AnchorPane pane) {
         chatPane.getChildren().clear();
         chatPane.getChildren().addAll(pane);
@@ -26,6 +27,15 @@ public class HelloController {
             ex.printStackTrace();
         }
         setMainPane(chatbox1);
+    }
+    @FXML
+    public void boxChat2(MouseEvent mouseEvent) {
+        try {
+            chatbox2 = FXMLLoader.load(getClass().getResource("Friend#2.fxml"));
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+        setMainPane(chatbox2);
     }
 
 }

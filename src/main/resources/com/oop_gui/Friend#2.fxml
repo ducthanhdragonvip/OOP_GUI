@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="boxChat1" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.oop_gui.Friend2">
+    <children>
+        <ImageView fitHeight="54.0" fitWidth="54.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../image/avatar2.png" />
+            </image>
+        </ImageView>
+        <Text layoutX="78.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Friend#2" wrappingWidth="107.73672485351562">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Text>
+        <Button layoutX="458.0" layoutY="17.0" mnemonicParsing="false">
+            <graphic>
+                <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../image/call.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button layoutX="528.0" layoutY="17.0" mnemonicParsing="false">
+            <graphic>
+                <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../image/call-video.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+        <TextField layoutX="80.0" layoutY="449.0" prefHeight="38.0" prefWidth="430.0" />
+        <Button layoutX="18.0" layoutY="449.0" mnemonicParsing="false">
+            <graphic>
+                <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../image/attchment.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button layoutX="531.0" layoutY="449.0" mnemonicParsing="false">
+            <graphic>
+                <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../image/send.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+        <Pane layoutX="13.0" layoutY="255.0" prefHeight="161.0" prefWidth="582.0">
+            <children>
+                <VBox layoutX="2.0" layoutY="-57.0" prefHeight="218.0" prefWidth="574.0">
+                    <children>
+                        <HBox prefHeight="91.0" prefWidth="574.0">
+                            <children>
+                                <ImageView fitHeight="42.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../image/avatar2.png" />
+                                    </image>
+                                </ImageView>
+                                <Label prefHeight="44.0" prefWidth="528.0" text="Do you go to school tomorrow ? ">
+                                    <font>
+                                        <Font size="21.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="10.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="91.0" prefWidth="574.0">
+                            <children>
+                                <ImageView fitHeight="42.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../image/myself.png" />
+                                    </image>
+                                </ImageView>
+                                <Label prefHeight="44.0" prefWidth="514.0" text="Yes, why ??">
+                                    <font>
+                                        <Font size="21.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </HBox>
+                  <HBox layoutX="10.0" layoutY="10.0" prefHeight="91.0" prefWidth="574.0">
+                     <children>
+                        <ImageView fitHeight="42.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../image/avatar2.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="44.0" prefWidth="528.0" text="Nothing, just ask :))">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="74.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="91.0" prefWidth="574.0">
+                     <children>
+                        <ImageView fitHeight="42.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../image/myself.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="44.0" prefWidth="514.0" text="Okay">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                    </children>
+                </VBox>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>
