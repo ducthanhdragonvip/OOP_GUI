@@ -9,6 +9,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
@@ -24,7 +25,7 @@
                 <Font size="20.0" />
             </font>
         </Text>
-        <Button layoutX="458.0" layoutY="17.0" mnemonicParsing="false">
+        <Button fx:id="call" layoutX="458.0" layoutY="17.0" mnemonicParsing="false">
             <graphic>
                 <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                     <image>
@@ -33,7 +34,7 @@
                 </ImageView>
             </graphic>
         </Button>
-        <Button layoutX="528.0" layoutY="17.0" mnemonicParsing="false">
+        <Button fx:id="video" layoutX="528.0" layoutY="17.0" mnemonicParsing="false">
             <graphic>
                 <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                     <image>
@@ -42,8 +43,8 @@
                 </ImageView>
             </graphic>
         </Button>
-        <TextField layoutX="80.0" layoutY="449.0" prefHeight="38.0" prefWidth="430.0" />
-        <Button layoutX="18.0" layoutY="449.0" mnemonicParsing="false">
+        <TextField fx:id="input" layoutX="80.0" layoutY="449.0" prefHeight="38.0" prefWidth="430.0" />
+        <Button fx:id="tag" layoutX="18.0" layoutY="449.0" mnemonicParsing="false">
             <graphic>
                 <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                     <image>
@@ -52,7 +53,7 @@
                 </ImageView>
             </graphic>
         </Button>
-        <Button layoutX="531.0" layoutY="449.0" mnemonicParsing="false">
+        <Button fx:id="send" layoutX="531.0" layoutY="449.0" mnemonicParsing="false">
             <graphic>
                 <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                     <image>
@@ -72,7 +73,7 @@
                                         <Image url="@../../image/avatar2.png" />
                                     </image>
                                 </ImageView>
-                                <Label prefHeight="44.0" prefWidth="528.0" text="Do you go to school tomorrow ? ">
+                                <Label fx:id="fiend1label" prefHeight="44.0" prefWidth="356.0" text="Do you go to school tomorrow ? ">
                                     <font>
                                         <Font size="21.0" />
                                     </font>
@@ -86,7 +87,7 @@
                                         <Image url="@../../image/myself.png" />
                                     </image>
                                 </ImageView>
-                                <Label prefHeight="44.0" prefWidth="514.0" text="Yes, why ??">
+                                <Label fx:id="myslefLabel" prefHeight="44.0" prefWidth="151.0" text="Yes, why ??">
                                     <font>
                                         <Font size="21.0" />
                                     </font>
@@ -100,7 +101,7 @@
                               <Image url="@../../image/avatar2.png" />
                            </image>
                         </ImageView>
-                        <Label prefHeight="44.0" prefWidth="528.0" text="Nothing, just ask :))">
+                        <Label fx:id="fiend1label" prefHeight="44.0" prefWidth="223.0" text="Nothing, just ask :))">
                            <font>
                               <Font size="21.0" />
                            </font>
@@ -114,7 +115,7 @@
                               <Image url="@../../image/myself.png" />
                            </image>
                         </ImageView>
-                        <Label prefHeight="44.0" prefWidth="514.0" text="Okay">
+                        <Label fx:id="myslefLabel" prefHeight="44.0" prefWidth="97.0" text="Okay">
                            <font>
                               <Font size="21.0" />
                            </font>
@@ -125,5 +126,6 @@
                 </VBox>
             </children>
         </Pane>
+      <Line endX="471.4000244140625" endY="-7.62939453125E-6" layoutX="115.0" layoutY="75.0" startX="-100.0" />
     </children>
 </AnchorPane>

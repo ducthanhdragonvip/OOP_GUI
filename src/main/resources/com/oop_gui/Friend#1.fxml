@@ -9,9 +9,9 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
-
 
 <AnchorPane fx:id="boxChat1" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.oop_gui.Friend1">
    <children>
@@ -30,7 +30,7 @@
             <Font size="20.0" />
          </font>
       </Text>
-      <Button layoutX="458.0" layoutY="17.0" mnemonicParsing="false">
+      <Button fx:id="call" layoutX="458.0" layoutY="17.0" mnemonicParsing="false">
          <graphic>
             <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -39,7 +39,7 @@
             </ImageView>
          </graphic>
       </Button>
-      <Button layoutX="528.0" layoutY="17.0" mnemonicParsing="false">
+      <Button fx:id="video" layoutX="528.0" layoutY="17.0" mnemonicParsing="false">
          <graphic>
             <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -48,8 +48,8 @@
             </ImageView>
          </graphic>
       </Button>
-      <TextField layoutX="80.0" layoutY="449.0" prefHeight="38.0" prefWidth="430.0" />
-      <Button layoutX="18.0" layoutY="449.0" mnemonicParsing="false">
+      <TextField fx:id="input" layoutX="80.0" layoutY="449.0" prefHeight="38.0" prefWidth="430.0" />
+      <Button fx:id="tag" layoutX="18.0" layoutY="449.0" mnemonicParsing="false">
          <graphic>
             <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -58,7 +58,7 @@
             </ImageView>
          </graphic>
       </Button>
-      <Button layoutX="531.0" layoutY="449.0" mnemonicParsing="false">
+      <Button fx:id="send" layoutX="531.0" layoutY="449.0" mnemonicParsing="false">
          <graphic>
             <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -78,7 +78,7 @@
                               <Image url="@../../image/avatar1.png" />
                            </image>
                         </ImageView>
-                        <Label prefHeight="44.0" prefWidth="528.0" text="Hi, how are you today ?">
+                        <Label fx:id="fiend1label" prefHeight="44.0" prefWidth="262.0" text="Hi, how are you today ?">
                            <font>
                               <Font size="21.0" />
                            </font>
@@ -92,7 +92,7 @@
                               <Image url="@../../image/myself.png" />
                            </image>
                         </ImageView>
-                        <Label prefHeight="44.0" prefWidth="514.0" text="I'm fine thank you ">
+                        <Label fx:id="myslefLabel" prefHeight="44.0" prefWidth="182.0" text="I'm fine thank you ">
                            <font>
                               <Font size="21.0" />
                            </font>
@@ -103,5 +103,6 @@
             </VBox>
          </children>
       </Pane>
+      <Line endX="471.4000244140625" endY="-7.62939453125E-6" layoutX="119.0" layoutY="79.0" startX="-100.0" />
    </children>
 </AnchorPane>
